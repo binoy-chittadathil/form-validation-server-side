@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+.form{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  background-color: rgb(167, 165, 164);
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+
+}
+.form input{
+  width: 300px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+::placeholder{
+  color: blue;
+  opacity: 0.8;
+}
+form button{
+  padding: 10px;
+  background-color: rgb(6, 36, 6);
+  border: 2px solid black;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(121, 117, 117);
+}
+.form span{
+  color: red;
+}

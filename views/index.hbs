@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="form" action="/submit" method="post">
+        <input type="text" name="userid" id="userid" placeholder="UserId :"> <br>
+        {{#if useridError}}<span id="userid-error">{{useridError}}</span>{{/if}}<br><br>
+        <input type="email" name="email" id="email" placeholder="Email"> <br>
+        {{#if emailError}}<span id="email-error">{{emailError}}</span>{{/if}}<br><br>
+        <input type="password" name="password" id="password" placeholder="Password :"> <br>
+        {{#if passwordError}}<span id="password-error">{{passwordError}}</span>{{/if}}<br><br>
+        <input type="password" name="confirmPassword" id="c-password" placeholder="Confirm Password :"> <br>
+        {{#if confirmPasswordError}}<span id="c-password-error">{{confirmPasswordError}}</span>{{/if}}<br><br>
+        <button type="submit">SignUp</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
